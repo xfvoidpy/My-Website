@@ -1,0 +1,33 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* Projelerim bölümüne hover efekti eklemiyoruz */
+#projects {
+    transition: none;
+}
+
+/* Proje Kartları için Hover Efekti */
+.grid .bg-gray-800 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Yavaş büyüme efekti */
+}
+
+.grid .bg-gray-800:hover {
+    transform: scale(1.05);
+    /* Kartların büyümesini sağla */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* Gölgeleme efekti */
+}
+
+/* Kartın üzerine gelindiğinde metni beyaz yap */
+.grid .bg-gray-800:hover p,
+.grid .bg-gray-800:hover h4 {
+    color: white;
+}
+
+/* Kartın içindeki linklerin üzerine gelindiğinde renk değişimi */
+.bg-gray-800 a:hover {
+    opacity: 1;
+    /* Linkin üzerine gelindiğinde opaklık artacak */
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr" class="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mert Dursun</title>
+    <!-- AOS (Animate On Scroll) Kütüphanesi -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="bg-gray-900 shadow-md text-white sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Mert Dursun</h1>
+
+            <!-- Menü ve hamburger birlikte -->
+            <div class="flex items-center space-x-4">
+                <!-- Menü (md ve üstü görünür) -->
+                <nav id="navbar" class="hidden md:flex space-x-2">
+                    <a href="#about"
+                        class="inline-flex items-center gap-2 px-4 py-2 bg-gray-700 text-gray-200 rounded-full shadow hover:bg-gray-600 transition duration-300">
+                        <span>👤</span> Hakkımda
+                    </a>
+                    <a href="#projects"
+                        class="inline-flex items-center gap-2 px-4 py-2 bg-gray-700 text-gray-200 rounded-full shadow hover:bg-gray-600 transition duration-300">
+                        <span>💼</span> Projeler
+                    </a>
+                    <a href="#contact"
+                        class="inline-flex items-center gap-2 px-4 py-2 bg-gray-500 text-gray-200 rounded-full shadow hover:bg-gray-600 transition duration-300">
+                        <span>📬</span> İletişim
+                    </a>
+                </nav>
+
+                <!-- Hamburger Menü (sadece md altı görünür) -->
+                <button id="menu-toggle"
+                    class="md:hidden text-white text-3xl focus:outline-none transition transform hover:scale-110 hover:text-gray-400">
+                    ☰
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Mobil Menü (açılıp kapanır) -->
+        <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+            <nav class="space-y-2">
+                <a href="#about" class="block px-4 py-2 rounded bg-gray-800 text-gray-200 hover:bg-gray-700">👤
+                    Hakkımda</a>
+                <a href="#projects" class="block px-4 py-2 rounded bg-gray-800 text-gray-200 hover:bg-gray-700">💼
+                    Projeler</a>
+                <a href="#contact" class="block px-4 py-2 rounded bg-gray-800 text-gray-200 hover:bg-gray-700">📬
+                    İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="text-center py-20 bg-gradient-to-br from-gray-900 to-gray-700">
+        <img src="assets/profile.jpg" alt="Profil Fotoğrafı"
+            class="w-44 h-44 mx-auto rounded-full shadow-md mb-6 hover:scale-105 transition-transform duration-300" />
+
+        <h2 class="text-4xl font-bold mb-4">Merhaba! Ben Mert Dursun</h2>
+        <p class="text-lg text-gray-400">
+            Frontend Developer | Backend Developer | Web Aşığı
+        </p>
+        <!-- Sosyal Medya İkonları -->
+        <div class="mt-6 flex justify-center space-x-6 text-2xl text-gray-400">
+            <a href="https://instagram.com/merttdurssun" target="_blank" class="hover:text-pink-500 transition">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/xfvoidpy" target="_blank" class="hover:text-white transition">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/halil-mert-291216323/" target="_blank" class="hover:text-blue-500 transition">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://youtube.com/@Mortleen" target="_blank" class="hover:text-red-500 transition">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://kick.com/Mortleen" target="_blank" class="hover:text-green-500 transition">
+                <i class="fab fa-kickstarter"></i> <!-- Font Awesome Kick İkonu -->
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- Hakkımda -->
+    <section id="about" class="container mx-auto px-6 py-16" data-aos="fade-up">
+        <div class="bg-gray-800 p-8 rounded-2xl shadow-lg">
+            <h3 class="text-3xl font-semibold mb-6 text-white">Hakkımda</h3>
+            <p class="text-gray-300 leading-relaxed">
+                Merhaba! Ben Mert Dursun, modern ve kullanıcı dostu web arayüzleri
+                geliştirmeye odaklanan bir frontend/Backend geliştiricisiyim. HTML, CSS,
+                JavaScript ve React gibi teknolojilerle çalışmayı seviyorum. Oyun oynamayı seven birisiyim ve oyunları 
+                hem youtube kanalımda paylaşıyor hemde kick üzerinde canlı yayın açıyorum.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projeler -->
+    <section id="projects" class="bg-gray-800 py-16 px-6">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-semibold mb-10 text-center text-white">
+                Projelerim
+            </h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Proje Kartları -->
+                <div class="bg-gray-800 rounded-2xl shadow-md overflow-hidden text-white" data-aos="fade-up">
+                    <img src="assets/proje1.png" alt="Proje Görseli" class="w-full h-40 object-cover" />
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2 text-white">Proje Adı</h4>
+                        <p class="text-gray-300 mb-4">
+                            Bu Projede Html , JavaScript , css Kullanarak Bir
+                            Portfolyo sitesi oluşturdum.
+                        </p>
+                        <a href="https://github.com/users/xfvoidpy/projects/2" target="_blank"
+                            class="inline-block bg-gray-800 text-white px-4 py-2 rounded hover:bg-black">GitHub</a>
+                        <a href="https://xfvoidpy.github.io/P.Website/" target="_blank"
+                            class="ml-2 inline-block border border-gray-800 text-gray-300 px-4 py-2 rounded hover:bg-gray-700">Canlı
+                            Gör</a>
+                    </div>
+                </div>
+                <!-- Diğer proje kartları da burada yer alacak -->
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="contact" class="container mx-auto px-6 py-16">
+        <h3 class="text-3xl font-semibold mb-6 text-white">İletişim</h3>
+        <form id="contact-form" action="https://formspree.io/f/mnndaawk" method="POST"
+            class="max-w-xl mx-auto space-y-4">
+            <!-- Adınız Alanı -->
+            <input type="text" id="name" name="name" placeholder="Adınız" required
+                class="w-full p-3 rounded-xl border border-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400 bg-gray-700 text-gray-300" />
+
+            <!-- E-posta Alanı -->
+            <input type="email" id="email" name="email" placeholder="E-posta Adresiniz" required
+                class="w-full p-3 rounded-xl border border-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400 bg-gray-700 text-gray-300" />
+
+            <!-- Mesaj Alanı -->
+            <textarea name="message" placeholder="Mesajınız" rows="5" required
+                class="w-full p-3 rounded-xl border border-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400 bg-gray-700 text-gray-300"></textarea>
+
+            <!-- Gönder Butonu -->
+            <button type="submit" class="bg-gray-800 text-white px-6 py-3 rounded-xl hover:bg-gray-900">Gönder</button>
+        </form>
+    </section>
+
+
+    <footer class="bg-gray-800 border-t py-4 text-center text-gray-500">
+        © 2025 MertDursun. Tüm hakları saklıdır.
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="main.js"></script>
+</html>
